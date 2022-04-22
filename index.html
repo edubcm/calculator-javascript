@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="section">
+      <div class="container grid">
+        <div class="section visor">
+          <div class="visor">
+            <div class="ongoing"></div>
+            <div class="result"></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="buttons" id="first-line">
+          <input id="undoAll" type="button" value="AC" />
+          <button class="operator" id="undo" type="button" value="">
+            <span class="icon-delete"></span>
+          </button>
+
+          <input class="operator" id="divide" type="button" value="/" />
+        </div>
+
+        <div class="buttons" id="second-line">
+          <input class="number" id="7" type="button" value="7" />
+          <input class="number" id="8" type="button" value="8" />
+          <input class="number" id="9" type="button" value="9" />
+          <button class="operator" id="multiply" type="button" value="*">
+            <span class="icon-cross"></span>
+          </button>
+        </div>
+
+        <div class="buttons" id="third-line">
+          <input class="number" id="4" type="button" value="4" />
+          <input class="number" id="5" type="button" value="5" />
+          <input class="number" id="6" type="button" value="6" />
+          <input class="operator" id="subtract" type="button" value="-" />
+        </div>
+
+        <div class="buttons" id="forth-line">
+          <input class="number" id="1" type="button" value="1" />
+          <input class="number" id="2" type="button" value="2" />
+          <input class="number" id="3" type="button" value="3" />
+          <input class="operator" id="sum" type="button" value="+" />
+        </div>
+
+        <div class="buttons" id="fifth-line">
+          <input class="number" id="0" type="button" value="0" />
+          <input class="number" type="button" value="," />
+          <button class="operator" id="get" type="button" value="">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Developed by Eduardo Barbosa -
+      <a href="https://www.github.com/edubcm" target="_blank">GitHub</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
